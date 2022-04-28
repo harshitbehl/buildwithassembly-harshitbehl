@@ -30,14 +30,14 @@ function Header() {
       <div className="header__container main-container">
         <div className="header__logo">
           <img
-            src="https://s3-eu-west-1.amazonaws.com/tpd/logos/6021a71ea023a000010884da/0x0.png"
+            src="https://s3-recruiting.cdn.greenhouse.io/external_greenhouse_job_boards/logos/400/397/400/original/Build-With-Assembly-Logo-black.png?1619213119"
             alt="Header Logo"
           />
         </div>
         <nav className="header__nav">
           <ul>
-            {createLink("/", "Orders")}
-            {createLink("/create-order", "Create Order")}
+            {createLink("/", "Home")}
+            {createLink("#", "About Us")}
             {createLink("#", "Services")}
             {createLink("#", "Resources")}
             {createLink("#", "Contact Us")}
@@ -47,7 +47,7 @@ function Header() {
           <motion.a
             whileHover={{ rotate: "1turn", scale: 1.1 }}
             transition={{ duration: 0.4 }}
-            href="https://github.com/harshitbehl/boxhub-harshitbehl"
+            href="https://github.com/harshitbehl/buildwithassembly-harshitbehl"
           >
             <BsGithub className="header__github-icon" />
           </motion.a>
