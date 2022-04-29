@@ -1,6 +1,8 @@
 import React from "react";
 import "./Task.scss";
 
+import TaskForm from "./TaskForm";
+
 function Task() {
   return (
     <section className="task" id="task-section">
@@ -10,7 +12,9 @@ function Task() {
           Search GitHub For Users & Organizations
         </p>
         <div className="task__content-container">
-          <div className="task__form-container"></div>
+          <div className="task__form-container">
+            <TaskForm />
+          </div>
           <div className="task__results-container"></div>
         </div>
       </div>
