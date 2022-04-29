@@ -1,8 +1,40 @@
 @use "../../sass/abstracts/variables";
 
 .task {
-  height: 100vh;
+  // height: 100vh;
   background-color: variables.$primary-theme-color;
 
-  
+  &__container {
+    height: 100%;
+    padding: 5rem 0;
+  }
+
+  &__title {
+    color: white;
+  }
+
+  &__subtitle {
+    text-align: center;
+    margin: 2rem 0;
+    font-size: 2.5rem;
+    font-weight: 300;
+    color: white;
+  }
+
+  &__content-container {
+    height: 60rem;
+    width: 100rem;
+    margin: 5rem auto;
+    border-radius: 2rem;
+    background-color: white;
+    overflow: hidden;
+  }
+
+  &__form-container {
+    height: 20%;
+  }
+
+  &__results-container {
+    height: 80%;
+  }
 }

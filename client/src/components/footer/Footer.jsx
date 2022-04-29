@@ -31,7 +31,7 @@ function Footer() {
       <div className="footer__top main-container">
         <div className="footer__logo">
           <img
-            src="https://s3-eu-west-1.amazonaws.com/tpd/logos/6021a71ea023a000010884da/0x0.png"
+            src="https://s3-recruiting.cdn.greenhouse.io/external_greenhouse_job_boards/logos/400/397/400/original/Build-With-Assembly-Logo-black.png?1619213119"
             alt="Header Logo"
           />
           <p>
@@ -80,7 +80,7 @@ function Footer() {
       </div>
 
       <div className="footer__bottom main-container">
-        <span>Copyright ©2022 Boxhub. All Rights Reserved.</span>
+        <span>Copyright ©2022 Build With Assembly. All Rights Reserved.</span>
       </div>
     </footer>
   );
