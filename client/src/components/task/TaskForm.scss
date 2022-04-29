@@ -1,0 +1,53 @@
+@use "../../sass/abstracts/variables";
+
+.task-form {
+  display: flex;
+  justify-content: center;
+  margin-top: 2rem;
+
+  &__radio-container {
+    display: flex;
+    align-items: center;
+
+    input[type="radio"] {
+      cursor: pointer;
+      margin-right: 1rem;
+    }
+
+    label {
+      margin-right: 2rem;
+    }
+  }
+
+  &__search-container {
+    border: 0.1rem solid variables.$primary-theme-color;
+    border-radius: 0.5rem;
+    overflow: hidden;
+
+    input {
+      font-family: "Roboto", sans-serif;
+      border: none;
+      padding: 1rem 1.5rem;
+      outline: none;
+      font-weight: 400;
+      font-size: 1.6rem;
+    }
+
+    button {
+      background-color: variables.$primary-button-color;
+      color: white;
+      border: none;
+      height: 100%;
+      padding: 1rem 2rem;
+      font-family: "Roboto", sans-serif;
+      font-weight: 300;
+      font-size: 1.6rem;
+      cursor: pointer;
+      transition: all 0.2s;
+
+      &:hover {
+        background-color: variables.$primary-button-color-dark;
+      }
+    }
+  }
+}

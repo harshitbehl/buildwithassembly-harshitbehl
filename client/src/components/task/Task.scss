@@ -25,6 +25,7 @@
     height: 60rem;
     width: 100rem;
     margin: 5rem auto;
+    padding: 2rem;
     border-radius: 2rem;
     background-color: white;
     overflow: hidden;
@@ -32,6 +33,16 @@
 
   &__form-container {
     height: 20%;
+
+    h3 {
+      // GitHub Icon
+      svg {
+        vertical-align: text-top;
+      }
+
+      text-align: center;
+      font-size: 3rem;
+    }
   }
 
   &__results-container {

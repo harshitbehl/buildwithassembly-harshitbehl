@@ -2,8 +2,15 @@ import React from "react";
 import "./Task.scss";
 
 import TaskForm from "./TaskForm";
+import { FaGithub } from "react-icons/fa";
+
+// Redux Imports
+import { useSelector } from "react-redux";
 
 function Task() {
+  // Redux Functions
+  const results = useSelector((state) => state.search.results);
+
   return (
     <section className="task" id="task-section">
       <div className="task__container main-container">
@@ -13,6 +20,9 @@ function Task() {
         </p>
         <div className="task__content-container">
           <div className="task__form-container">
+            <h3>
+              <FaGithub /> GitHub Search
+            </h3>
             <TaskForm />
           </div>
           <div className="task__results-container"></div>
