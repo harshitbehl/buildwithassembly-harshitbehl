@@ -50,4 +50,17 @@
       }
     }
   }
+
+  &__status {
+    display: flex;
+    align-items: center;
+    width: 20rem;
+    margin-left: 2rem;
+    font-weight: 700;
+
+    span {
+      font-weight: 300;
+      margin-left: 1rem;
+    }
+  }
 }
