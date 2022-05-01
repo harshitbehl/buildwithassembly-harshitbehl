@@ -2,6 +2,7 @@ import React from "react";
 import "./TaskForm.scss";
 
 import { Formik, Form, Field, ErrorMessage } from "formik";
+import validationSchema from "../../utils/helpers/taskFormValidation";
 import axios from "axios";
 
 // Redux Imports
@@ -21,15 +22,19 @@ function TaskForm({ status, setStatus }) {
           `https://api.github.com/search/users?q=${values.search}`
         );
 
+        res.data.items.length === 0
+          ? setStatus("No Results Found")
+          : setStatus("Success");
         dispatch(setResults(res.data.items));
-        setStatus("Success");
       } else if (values.searchCondition === "organizations") {
         const res = await axios.get(
           `https://api.github.com/search/users?q=${values.search}+type:org`
         );
 
+        res.data.items.length === 0
+          ? setStatus("No Results Found")
+          : setStatus("Success");
         dispatch(setResults(res.data.items));
-        setStatus("Success");
       }
 
       // Clear Fields After Form Submission
@@ -43,31 +48,43 @@ function TaskForm({ status, setStatus }) {
   return (
     <Formik
       initialValues={{ searchCondition: "users", search: "" }}
+      validationSchema={validationSchema}
       onSubmit={handleSubmit}
     >
       {({ values }) => (
         <Form className="task-form">
-          <div className="task-form__radio-container">
-            <Field type="radio" name="searchCondition" value="users" />
-            <label htmlFor="searchCondition">Users</label>
-            <Field type="radio" name="searchCondition" value="organizations" />
-            <label htmlFor="searchCondition">Organizations</label>
+          <div className="task-form__wrapper">
+            <div className="task-form__radio-container">
+              <Field type="radio" name="searchCondition" value="users" />
+              <label htmlFor="searchCondition">Users</label>
+              <Field
+                type="radio"
+                name="searchCondition"
+                value="organizations"
+              />
+              <label htmlFor="searchCondition">Organizations</label>
+            </div>
+
+            <div className="task-form__search-container">
+              <Field
+                type="search"
+                name="search"
+                placeholder={
+                  values.searchCondition === "users"
+                    ? "Search Users"
+                    : "Search Organizations"
+                }
+              />
+              <button type="submit">Search</button>
+            </div>
+
+            <p className="task-form__status">
+              Status: <span>{status}</span>
+            </p>
           </div>
-          <div className="task-form__search-container">
-            <Field
-              type="search"
-              name="search"
-              placeholder={
-                values.searchCondition === "users"
-                  ? "Search Users"
-                  : "Search Organizations"
-              }
-            />
-            <button type="submit">Search</button>
+          <div className="task-form__error-message">
+            <ErrorMessage name="search" />
           </div>
-          <p className="task-form__status">
-            Status: <span>{status}</span>
-          </p>
         </Form>
       )}
     </Formik>

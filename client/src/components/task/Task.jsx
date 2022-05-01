@@ -53,7 +53,11 @@ function Task() {
                     sx={{ height: 70, width: 70 }}
                   />
                   <p>{result.login}</p>
-                  <a href={result.html_url} target="_blank">
+                  <a
+                    href={result.html_url}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
                     GitHub Profile
                   </a>
                 </div>

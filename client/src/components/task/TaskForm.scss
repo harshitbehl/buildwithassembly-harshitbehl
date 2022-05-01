@@ -2,8 +2,22 @@
 
 .task-form {
   display: flex;
-  justify-content: center;
+  flex-direction: column;
   margin-top: 2rem;
+
+  &__wrapper {
+    display: flex;
+    justify-content: center;
+  }
+
+  &__error-message {
+    height: 2rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.4rem;
+    color: #f44336;
+  }
 
   &__radio-container {
     display: flex;
