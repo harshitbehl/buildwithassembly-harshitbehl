@@ -15,7 +15,6 @@ function Task() {
 
   // Redux Functions
   const results = useSelector((state) => state.search.results);
-  console.log(results);
 
   return (
     <section className="task" id="task-section">

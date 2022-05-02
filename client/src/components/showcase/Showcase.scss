@@ -1,10 +1,14 @@
 @use "../../sass/abstracts/variables";
+@use "../../sass/abstracts/mixins";
 
 .showcase {
   height: 100vh;
-  //   background-color: variables.$primary-background-color-dark;
   background-color: rgb(245, 245, 245, 0.9);
   position: relative;
+
+  @include mixins.phone {
+    display: none;
+  }
 
   &__background-video {
     height: 100%;

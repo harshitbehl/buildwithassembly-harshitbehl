@@ -1,4 +1,5 @@
 @use "../../sass/abstracts/variables";
+@use "../../sass/abstracts/mixins";
 
 .footer {
   background-color: variables.$primary-background-color-dark;
@@ -13,8 +14,16 @@
   &__logo {
     flex-basis: 30%;
 
+    @include mixins.phone {
+      flex-basis: 100%;
+    }
+
     img {
       height: 5rem;
+
+      @include mixins.phone {
+        display: none;
+      }
     }
 
     p {
@@ -22,6 +31,11 @@
       margin: 2rem 0;
       letter-spacing: 0.1rem;
       font-size: 1.5rem;
+
+      @include mixins.phone {
+        text-align: center;
+        margin: 0;
+      }
 
       .footer__logo-heart {
         color: #f44336;
@@ -34,6 +48,10 @@
 
     &-icons {
       color: variables.$primary-button-color;
+
+      @include mixins.phone {
+        display: none;
+      }
 
       .footer__logo-icon {
         font-size: 3rem;
@@ -49,6 +67,10 @@
 
   &__other-pages {
     flex-basis: 20%;
+
+    @include mixins.phone {
+      display: none;
+    }
 
     h4 {
       color: variables.$primary-text-color;
@@ -79,6 +101,10 @@
   &__quick-links {
     flex-basis: 20%;
 
+    @include mixins.phone {
+      display: none;
+    }
+
     h4 {
       color: variables.$primary-text-color;
       font-size: 2rem;
@@ -107,6 +133,10 @@
 
   &__social-media {
     flex-basis: 30%;
+
+    @include mixins.phone {
+      display: none;
+    }
 
     h4 {
       color: variables.$primary-text-color;
@@ -143,6 +173,10 @@
     border-top: 0.1rem solid rgb(128, 128, 128, 0.2);
     padding: 4rem 0;
     text-align: end;
+
+    @include mixins.phone {
+      display: none;
+    }
 
     span {
       color: grey;
