@@ -87,7 +87,7 @@ Start the server
 
 **Smartphone Version**
 
-<img src="/assets/readmeImages/phoneVersion.png" width="400"/>
+<img src="/assets/readmeImages/phoneVersion.png" height="500"/>
 
 ## 📌 Tasks Performed
 
