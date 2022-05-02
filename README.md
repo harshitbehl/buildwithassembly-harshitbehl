@@ -1,4 +1,4 @@
-<img src="https://s3-recruiting.cdn.greenhouse.io/external_greenhouse_job_boards/logos/400/397/400/original/Build-With-Assembly-Logo-black.png?1619213119" width="500" />
+<img src="https://s3-recruiting.cdn.greenhouse.io/external_greenhouse_job_boards/logos/400/397/400/original/Build-With-Assembly-Logo-black.png?1619213119" width="400" />
 
 ---
 
@@ -87,7 +87,7 @@ Start the server
 
 **Smartphone Version**
 
-![Smartphone Version](/assets/readmeImages/phoneVersion.png)
+<img src="/assets/readmeImages/phoneVersion.png" width="400"/>
 
 ## 📌 Tasks Performed
 
@@ -129,6 +129,8 @@ Start the server
 - Search input field validation to check if user has entered any data before search term submission.
 - If there is any error in fetching API data it will redirect to 404 page.
 - If there are no results found in API response it will redirect to 404 page and status will be updated accordingly.
+
+<img src="/assets/readmeImages/notFound.png" width="500"/>
 
 ## 🚀 API Reference
 
