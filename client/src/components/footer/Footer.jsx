@@ -13,6 +13,7 @@ import {
   FaHeartbeat,
 } from "react-icons/fa";
 import { motion } from "framer-motion";
+import appLogo from "../../assets/images/appLogo.png";
 
 function Footer() {
   // Link Creator Function
@@ -30,10 +31,7 @@ function Footer() {
     <footer className="footer">
       <div className="footer__top main-container">
         <div className="footer__logo">
-          <img
-            src="https://s3-recruiting.cdn.greenhouse.io/external_greenhouse_job_boards/logos/400/397/400/original/Build-With-Assembly-Logo-black.png?1619213119"
-            alt="Header Logo"
-          />
+          <img src={appLogo} alt="Header Logo" />
           <p>
             Made with <FaHeartbeat className="footer__logo-heart" /> in{" "}
             <FaCanadianMapleLeaf className="footer__logo-maple" /> by Harshit
@@ -80,7 +78,7 @@ function Footer() {
       </div>
 
       <div className="footer__bottom main-container">
-        <span>Copyright ©2022 Build With Assembly. All Rights Reserved.</span>
+        <span>Copyright ©2022 Searchhub. All Rights Reserved.</span>
       </div>
     </footer>
   );

@@ -15,16 +15,15 @@ function Showcase() {
       <div className="showcase__container main-container">
         <div className="showcase__content-container">
           <h1>
-            Build With{" "}
             <motion.span
               whileHover={{ rotate: 10 }}
               transition={{ type: "spring", stiffness: 500 }}
             >
-              Assembly
+              Searchhub
             </motion.span>{" "}
-            Take Home Task
+            GitHub Search Application
           </h1>
-          <p>Frontend Task, by Harshit Behl</p>
+          <p>Search GitHub Database</p>
           <a href="#task-section">
             <motion.button
               animate={{ scale: [1, 1.1, 1] }}
@@ -34,7 +33,7 @@ function Showcase() {
                 delay: 1.5,
               }}
             >
-              View Task
+              Search
             </motion.button>
           </a>
         </div>

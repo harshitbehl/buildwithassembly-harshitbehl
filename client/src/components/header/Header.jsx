@@ -4,6 +4,7 @@ import "./Header.scss";
 
 import { BsGithub } from "react-icons/bs";
 import { motion } from "framer-motion";
+import appLogo from "../../assets/images/appLogo.png";
 
 function Header() {
   const [isScrolled, setIsScrolled] = useState(false);
@@ -29,10 +30,7 @@ function Header() {
     >
       <div className="header__container main-container">
         <div className="header__logo">
-          <img
-            src="https://s3-recruiting.cdn.greenhouse.io/external_greenhouse_job_boards/logos/400/397/400/original/Build-With-Assembly-Logo-black.png?1619213119"
-            alt="Header Logo"
-          />
+          <img src={appLogo} alt="Header Logo" />
         </div>
         <nav className="header__nav">
           <ul>
@@ -47,7 +45,7 @@ function Header() {
           <motion.a
             whileHover={{ rotate: "1turn", scale: 1.1 }}
             transition={{ duration: 0.4 }}
-            href="https://github.com/harshitbehl/buildwithassembly-harshitbehl"
+            href="https://github.com/harshitbehl/searchhub"
           >
             <BsGithub className="header__github-icon" />
           </motion.a>

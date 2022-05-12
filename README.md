@@ -1,27 +1,27 @@
-<img src="https://s3-recruiting.cdn.greenhouse.io/external_greenhouse_job_boards/logos/400/397/400/original/Build-With-Assembly-Logo-black.png?1619213119" width="400" />
+<img src="/assets/readmeImages/appLogo.png" width="400" />
 
 ---
 
-# Build With Assembly Take Home Task
+# Searchhub - GitHub Database Search - GitHub API
 
 An interactive & fully responsive web application to search github database for users and organizations. 🚀
 
 ## 🔗 Live Demo
 
-[Click For Live Demo](https://buildwithassembly-harshitbehl.vercel.app)
+[Click For Live Demo](https://searchhub.vercel.app)
 
 ## 💻 Run Locally
 
 Clone the project
 
 ```bash
-  git clone https://github.com/harshitbehl/buildwithassembly-harshitbehl.git
+  git clone https://github.com/harshitbehl/searchhub.git
 ```
 
 Go to the project directory
 
 ```bash
-  cd buildwithassembly-harshitbehl > cd client
+  cd searchhub > cd client
 ```
 
 Install dependencies
@@ -41,11 +41,11 @@ Start the server
 - Interactive sticky header with an animated github source code button & links.
 - Beautiful and interactive landing page showcase with animations.
   - Network nodes live motion background.
-  - Spring animated "Assembly" text on hover.
+  - Spring animated "Searchhub" text on hover.
   - SVG Illustration animation on first render.
   - A delayed animated attention grabbing button, which will guide towards the task section.
   - SVG waves section divider for modern look and feel.
-- Task section with background inspired from build with assembly's website.
+- Task section with background inspired from modern websites.
   - Modern & attractive form design.
   - Form is interactive and change as we enter inputs.
   - Form validations & errors.
@@ -99,7 +99,7 @@ Start the server
 
 **Design**
 
-- Select & wireframe application layout & design, take inspiration from build with assembly website.
+- Select & wireframe application layout & design, take inspiration from dribbble.
 - Select application theme, color pallette & typography.
 - Break application into components while ensuring it stays scalable.
 
