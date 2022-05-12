@@ -8,7 +8,7 @@ An interactive & fully responsive web application to search github database for 
 
 ## 🔗 Live Demo
 
-[Click For Live Demo](https://searchhub.vercel.app)
+[Click For Live Demo](https://searchhub-harshitbehl.vercel.app)
 
 ## 💻 Run Locally
 
